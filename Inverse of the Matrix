@@ -1,0 +1,26 @@
+#i]
+import numpy as np
+M=np.array([[1,2,1],[2,1,0],[3,0,2]])
+print("The given matrix M is \n",M)
+det=np.linalg.det(M)
+print("The given determinant of the Matrix=",det)
+if det!=0:
+    InvM=np.linalg.inv(M)
+    print("The inverse of the matrix M is \n",InvM)
+else:
+    print("The inverse of the matrix does'nt exist")
+ 
+
+
+
+#ii]
+import numpy as np
+M=np.array([[1,2,3],[0,-1,0],[2,4,6]])
+print("The given matrix M is \n",M)
+det=np.linalg.det(M)
+print("The given determinant of the Matrix=",det)
+if det!=0:
+    InvM=np.linalg.inv(M)
+    print("The inverse of the matrix M is \n",InvM)
+else:
+    print("The inverse of the matrix does'nt exist")
