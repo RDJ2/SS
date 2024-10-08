@@ -8,7 +8,7 @@ plt.ylabel('Imaginary')
 plt.xlabel('Real')
 plt.show()
 
-#B]scaling
+#B]scalar
 import matplotlib.pyplot as plt
 z=complex(input("Enter the complex number:"))
 print("The given complex number is:",z)
