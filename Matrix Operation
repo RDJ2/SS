@@ -1,0 +1,72 @@
+#i]Enter using defined two Matrix
+import numpy as np
+X=int(input("Enter number of row:"))
+Y=int(input("Enter number of cloums:"))
+n=X*Y
+list=[]
+for i in range(n):
+    a=int(input("Input elements"))
+    list.append(a)
+A=np.array(list).reshape(X,Y)
+print(A)
+P=int(input("Enter number of row:"))
+Q=int(input("Enter number of cloums:"))
+n=P*Q
+list=[]
+for i in range(n):
+    a=int(input("Input elements"))
+    list.append(a)
+B=np.array(list).reshape(P,Q)
+print(B)
+
+
+#ii]Addition of two Matrix
+import numpy as np
+X=int(input("Enter number of row:"))
+Y=int(input("Enter number of cloums:"))
+n=X*Y
+list=[]
+for i in range(n):
+    a=int(input("Input elements"))
+    list.append(a)
+A=np.array(list).reshape(X,Y)
+print(A)
+P=int(input("Enter number of row:"))
+Q=int(input("Enter number of cloums:"))
+n=P*Q
+list=[]
+for i in range(n):
+    a=int(input("Input elements"))
+    list.append(a)
+B=np.array(list).reshape(P,Q)
+print(B)
+if (B.shape==A.shape):
+    print("The addition A&B",A+B)
+else:
+    print("Addition is not possible")
+
+
+#iii]Multiplication of  two Matrix
+import numpy as np
+X=int(input("Enter number of row:"))
+Y=int(input("Enter number of cloums:"))
+n=X*Y
+list=[]
+for i in range(n):
+    a=int(input("Input elements"))
+    list.append(a)
+A=np.array(list).reshape(X,Y)
+print(A)
+P=int(input("Enter number of row:"))
+Q=int(input("Enter number of cloums:"))
+n=P*Q
+list=[]
+for i in range(n):
+    a=int(input("Input elements"))
+    list.append(a)
+B=np.array(list).reshape(P,Q)
+print(B)
+if (np.shape(B)[1]==np.shape(A)[0]):
+    print("The miltiplication A&B",np.dot(A,B))
+else:
+    print("multiplication is not possible")
