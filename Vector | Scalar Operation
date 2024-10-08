@@ -1,0 +1,82 @@
+#i]Input a vector using list
+n=int(input("Give no. of coordinates"))
+print("The first vector")
+u=[int(input("Give the coordinates"))for i in range(n)]
+print("u=",u)
+print("The second vector")
+v=[int(input("Give the coordinates"))for i in range(n)]
+print("v=",v)
+
+
+#ii]Addition of the vector
+n=int(input("Give no. of coordinates"))
+print("The first vector")
+u=[int(input("Give the coordinates"))for i in range(n)]
+print("u=",u)
+print("The second vector")
+v=[int(input("Give the coordinates"))for i in range(n)]
+print("v=",v)
+#addition
+def addvec(v,u):
+    s=0
+    add=[]
+    for i in range(len(v)):
+        s=v[i]+u[1]
+        add.append(s)
+    return(add)
+print("Addition of two vectors",addvec(u,v))
+
+#addition
+def add_vect(u,v):
+    if (u!=v):
+        raise valueerror("list must be same")
+    return [x + y for x, y in zip(u, v)]
+result=add_vect(u,v)
+print("Addition of two vectors",result)
+
+
+
+#iii]Scalat multiplication
+n=int(input("Give no. of coordinates"))
+print("The first vector")
+u=[int(input("Give the coordinates"))for i in range(n)]
+print("u=",u)
+print("The second vector")
+v=[int(input("Give the coordinates"))for i in range(n)]
+print("v=",v)
+#multiplication
+def scalar_mul(v,u):
+    k=int(input("type any scalar"))
+    s=0
+    mul=[]
+    for i in range(len(v)):
+        s=v[i]*u[i]
+        mul.append(s)
+    return(mul)
+print("The scalar multiplication",scalar_mul(u,v))
+
+#multiplication
+def scalar_mul(u,v):
+    if (u!=v):
+        raise valueerror("list must be same")
+    return [x * y for x, y in zip(u, v)]
+result=scalar_mul(u,v)
+print("multiplication  of two vectors",result)
+
+
+
+#iv]Dot product u & v
+n=int(input("Give no. of coordinates"))
+print("The first vector")
+u=[int(input("Give the coordinates"))for i in range(n)]
+print("u=",u)
+print("The second vector")
+v=[int(input("Give the coordinates"))for i in range(n)]
+print("v=",v)
+#dot product
+def dotvec(v,u):
+    s=0
+    for i in range(len(v)):
+        s=s+v[i]*u[i]
+    return(s)
+print("the dot product is",dotvec(v,u))
