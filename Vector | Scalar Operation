@@ -36,7 +36,7 @@ print("Addition of two vectors",result)
 
 
 
-#iii]Scalat multiplication
+#iii]Scalar multiplication
 n=int(input("Give no. of coordinates"))
 print("The first vector")
 u=[int(input("Give the coordinates"))for i in range(n)]
