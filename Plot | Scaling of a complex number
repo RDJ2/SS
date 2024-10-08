@@ -1,0 +1,47 @@
+#A]plotting a set of complex number
+import matplotlib.pyplot as plt
+data=[1+2j,-1+4j,4+3j,-4,2-1j,3+9j,-2+6j,5]
+x=[x.real for x in data]
+y=[y.imag for y in data]
+plt.scatter(x,y)
+plt.ylabel('Imaginary')
+plt.xlabel('Real')
+plt.show()
+
+#B]scaling
+import matplotlib.pyplot as plt
+z=complex(input("Enter the complex number:"))
+print("The given complex number is:",z)
+k=int(input("Enter the constant number:"))
+print("The given constant number is:",k)
+x=z.real
+y=z.imag
+plt.plot(x,y,'r*')
+plt.ylabel('Imaginary')
+plt.xlabel('Real')
+plt.grid()
+data1=k*z
+x=data1.real
+y=data1.imag
+plt.plot(x,y,'g*')
+plt.show()
+
+#C]#creating a plot by rotating the given complex number by degree  90,180,270
+import matplotlib.pyplot as plt
+z=complex(input("enter the first complex number:"))
+print("The given complex number is :",z)
+x=z.real
+y=z.imag
+plt.plot(x,y,'r*')
+plt.ylabel('Imaginary')
+plt.xlabel('Real')
+plt.grid()
+data1=1j*z
+data2=-1*
+data3=-1j*z 
+x=data1.real
+y=data1.imag
+x1=data2.real
+y1=data2.imag
+x2=data3.real
+y2=data3.imag
