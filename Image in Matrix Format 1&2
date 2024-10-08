@@ -1,0 +1,67 @@
+#Basic Matrix Application-I
+#Q]Represation of Image in matrix format and Image transformation
+
+import numpy as np
+from PIL import Image
+from numpy import asarray
+img=asarray(Image.open('C:/photo path'))
+print(Image.shape)
+data=Image.fromarray(img)
+data.show()
+
+
+#Basic Matrix Application-II
+#Q]Perform Image Addition,Multiplication & Subtraction
+
+#i]Addition
+import numpy as np
+from PIL import Image
+from numpy import asarray
+img=asarray(Image.open('C:/photo path'))
+img0=asarray(Image.open('C:/photo path'))
+print(img.shape)
+print(img0.shape)
+nimg=(img+img0).astype(np.uint8)
+data=Image.fromarray(nimg)
+print(type(data))
+a=Image.open(('C:/photo path'))
+b=Image.open(('C:/photo path'))
+a.show()
+b.show()
+data.show()
+
+
+#ii]Subtraction
+import numpy as np
+from PIL import Image
+from numpy import asarray
+img=asarray(Image.open('C:/photo path'))
+img0=asarray(Image.open('C:/photo path'))
+print(img.shape)
+print(img0.shape)
+nimg=(img-img0).astype(np.uint8)
+data=Image.fromarray(nimg)
+print(type(data))
+a=Image.open(('C:/photo path'))
+b=Image.open(('C:/photo path'))
+a.show()
+b.show()
+data.show()
+
+
+#iii]Multiplication
+import numpy as np
+from PIL import Image
+from numpy import asarray
+img=asarray(Image.open('C:/photo path'))
+img0=asarray(Image.open('C:/photo path'))
+print(img.shape)
+print(img0.shape)
+nimg=(0.6*img+0.4*img0).astype(np.uint8)
+data=Image.fromarray(nimg)
+print(type(data))
+a=Image.open(('C:/photo path'))
+b=Image.open(('C:/photo path'))
+a.show()
+b.show()
+data.show()
